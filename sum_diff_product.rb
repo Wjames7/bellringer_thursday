@@ -1,14 +1,25 @@
-puts "Submit a number"
-first_num = gets.chomp
+puts "Enter the first number"
+response = gets.chomp
 
-puts "Submit a second number"
-second_num = gets.chomp
 
-num_sum = first_num.to_i + second_num.to_i
-num_diff = first_num.to_i - second_num.to_i
-num_pro = first_num.to_i  * second_num.to_i
+class changeNumbers 
 
-puts " "
-puts num_sum
-puts num_diff
-puts num_pro
+	def check_space(response)
+		response.split(" ")
+		first_num = 1 # Placeholder 1
+		second_num = 2 # Placeholder 2
+	end
+
+	def add(first_num, second_num)
+		 puts first_num.to_i + second_num.to_i
+	end
+
+	def diff(first_num, second_num)
+		puts second_num.to_i - second_num.to_i
+	end
+
+	def pro(first_num, second_num)
+		puts first_num.to_i  * second_num.to_i
+	end
+
+end
