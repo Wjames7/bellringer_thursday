@@ -3,6 +3,7 @@ class ChangeNumbers
 	def initialize(first_num, second_num)
 		@first = first_num
 		@second = second_num
+		run(@first, @second)
 	end
 
 	def run(first_num, second_num)
@@ -29,15 +30,14 @@ end
 ary = [] #initial state
 
 ARGV.each do|a|
-  puts "Argument: #{a}"
+  #puts "Argument: #{a}"
 
   ary << a
 
   #puts "ary: "+ary.to_s
 end
 
-puts ary[0]
-puts ary[1]
+first_num = ary[0]
+second_num = ary[1]
 
- data = ChangeNumbers.new ary[0], ary[1]
-puts data
+ data = ChangeNumbers.new first_num, second_num
